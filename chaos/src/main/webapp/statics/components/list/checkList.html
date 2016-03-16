@@ -1,0 +1,11 @@
+<ul>
+    <slot>
+        <span>当前项：{{ checkedItems | json }}</span>
+    </slot>
+    <li v-for="item in items">
+        <!--<input type="checkbox" id="ckb_{{ item.id }}" v-model="checkedItems" value="{{ item.id }}" checked="{{ checked(item.id) }}">-->
+        <!--<label for="ckb_{{ item.id }}">{{ item.name }}</label>-->
+        <chaos-ckb-item :id="item.id ? item.id : $index" :name="item.name"
+                        :checked-items="checkedItems"></chaos-ckb-item>
+    </li>
+</ul>

@@ -1,0 +1,5 @@
+<div data-tip="chaos-select-item" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+    <select v-model="selected" id="sel_{{ id }}" name="{{ name }}">
+        <option v-bind:value="{{ opt }}" v-for="opt in opts" value="{{ opt.val }}">{{ opt.name }}</option>
+    </select>
+</div>

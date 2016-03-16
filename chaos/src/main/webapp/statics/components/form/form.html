@@ -1,0 +1,5 @@
+<div>
+    <div class="row cl" v-for="row in form.rows">
+        <component v-for="col in row.cols" :is="col.type" :col="col"></component>
+    </div>
+</div>

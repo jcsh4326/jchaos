@@ -1,0 +1,5 @@
+<div data-tip="chaos-text-item" @esc.enter="verify(id, $event)" @tab.enter="verify(id, $event)">
+    <label for="text_{{ id }}">{{ name }}{{ value }}</label>
+    <input id="text_{{ id }}" type="text" :class="classObject" :style="styleObject"
+           v-model="value" placeholder="{{ placeholder }}">
+</div>

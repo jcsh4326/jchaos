@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*
+ * ------ 页面布局 ------
+ */
+/* 侧边栏 */
+aside, .chaos-aside {
+    margin: 40px 0 10px 0;
+    z-index: 99;
+}
+/* 区段部分 */
+section, .chaos-section {
+    margin: 40px 0 10px 0;
+    z-index: 99;
+}
+/*
+ * ------ 表单布局 ------
+ */
+/* 行内的列保持在同一行上 */
+.row > .chaos-col {
+    float: left;
+}
+/* 行间距 */
+.row {
+    margin: 5px 0;
+}
+
+/* 一列有8格，相当于12栅格里的1.5 */
+.col-15 {
+    width: 12.5%;
+}
+
+.col-15 {
+    box-sizing: border-box;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    transition: all 0.3s ease-in 0s;
+}

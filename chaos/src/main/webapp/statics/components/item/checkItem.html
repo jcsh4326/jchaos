@@ -1,0 +1,9 @@
+<div data-tip="chaos-ckb-item" @click.self="edit(id, $event)">
+    <!-- 注释不能写在root node上，不然报片段实例 Fragment_Instance -->
+    <!-- 在 Vue.js 指令和特殊特性内不能用插值 {{ id }} -->
+    <!-- v-model是一个语法糖，实际上是监听了input的change事件 -->
+    <!-- 当input的输入改变时，将改变的结果赋给v-model指定的对象 -->
+    <!-- 当v-model指定的对象是Array时（显式地在data中声明为Array/[]），value的值会被push进Array -->
+    <input type="checkbox" id="ckb_{{ id }}" v-model="checkedItems" value="{{ id }}" checked="{{ checked }}">
+    <label for="ckb_{{ id }}">{{ name }}{{ checkedItems | json}}</label>
+</div>

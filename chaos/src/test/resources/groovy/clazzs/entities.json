@@ -1,0 +1,52 @@
+[
+  {
+    "className":"Man",
+    "dataSource":"0",
+    "classAlias":"男性",
+    "fields":[
+      {
+        "name":"sex",
+        "alias":"性别",
+        "modifier":"private",
+        "getter": true,
+        "setter": true,
+        "type": "String",
+        "defaultValue": "\"男\""
+      },
+      {
+        "name":"age",
+        "alias":"年龄",
+        "modifier":"private",
+        "getter": true,
+        "setter": true,
+        "type": "int",
+        "defaultValue": ""
+      }
+    ]
+  },
+  {
+    "className":"Woman",
+    "dataSource":"0",
+    "classAlias":"男性",
+    "fields":[
+      {
+        "name":"sex",
+        "alias":"性别",
+        "modifier":"private",
+        "getter": true,
+        "setter": true,
+        "type": "String",
+        "defaultValue": "\"男\""
+      },
+      {
+        "name":"age",
+        "alias":"年龄",
+        "modifier":"private",
+        "getter": true,
+        "setter": true,
+        "type": "int",
+        "defaultValue": ""
+      }
+    ]
+  }
+]

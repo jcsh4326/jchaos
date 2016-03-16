@@ -1,0 +1,7 @@
+.desc, .editor {
+    height: 100%;
+    bottom: 20px;
+}
+.editor {
+    display: none;
+}
